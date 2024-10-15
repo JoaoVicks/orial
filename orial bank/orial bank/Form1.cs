@@ -21,5 +21,15 @@ namespace orial_bank
         {
 
         }
+
+        private void kryptonGroup1_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,3 +11,17 @@ C:\Users\Alunos\source\repos\orial bank\orial bank\obj\Debug\orial bank.csproj.C
 C:\Users\Alunos\source\repos\orial bank\orial bank\obj\Debug\orial bank.csproj.CopyComplete
 C:\Users\Alunos\source\repos\orial bank\orial bank\obj\Debug\orial bank.exe
 C:\Users\Alunos\source\repos\orial bank\orial bank\obj\Debug\orial bank.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\bin\Debug\orial bank.exe.config
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\bin\Debug\orial bank.exe
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\bin\Debug\orial bank.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial_bank.Form1.resources
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial_bank.Properties.Resources.resources
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.csproj.GenerateResource.cache
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.csproj.Up2Date
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.exe
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\bin\Debug\Guna.UI2.dll
+C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial_bank.RegisterWindow.resources
