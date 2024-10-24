@@ -46,5 +46,10 @@ namespace orial_bank
         {
 
         }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
