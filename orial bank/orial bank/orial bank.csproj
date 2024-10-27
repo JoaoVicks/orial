@@ -182,5 +182,26 @@
   <ItemGroup>
     <None Include="Resources\arrow-right-white.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHIP-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn-aproximação.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn-bandeira.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn-pix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn-door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn-door2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,9 +28,9 @@ namespace orial_bank
 
         }
 
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        private void inputPassWord_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -50,6 +50,64 @@ namespace orial_bank
 
         private void label5_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {   
+            Form1 firstForm = new Form1();
+
+            this.Close();
+
+            firstForm.Show();
+        }
+
+        private void inputPassWord_Enter(object sender, EventArgs e)
+        {
+            if(inputPassWord.Text == "digite a sua senha")
+            {
+                inputPassWord.Text = string.Empty;
+                inputPassWord.ForeColor = Color.White;
+            }
+        }
+
+        private void inputPassWord_Leave(object sender, EventArgs e)
+        {
+            if (inputPassWord.Text == "")
+            {
+                inputPassWord.Text = "digite a sua senha";
+                inputPassWord.ForeColor = Color.White;
+            }
+        }
+
+        private void inputConfirmPassWord_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputConfirmPassWord_Enter(object sender, EventArgs e)
+        {
+            if (inputConfirmPassWord.Text == "digite novamente a sua senha")
+            {
+                inputConfirmPassWord.Text = "";
+                inputConfirmPassWord.ForeColor = Color.White;
+            }
+        }
+
+        private void inputConfirmPassWord_Leave(object sender, EventArgs e)
+        {
+            if (inputConfirmPassWord.Text == "")
+            {
+                inputConfirmPassWord.Text = "digite novamente a sua senha";
+                inputConfirmPassWord.ForeColor = Color.White;
+            }
+        }
+
+        private void buttonReturn_Click(object sender, EventArgs e)
+        {
+            RegisterWindow previousForm = new RegisterWindow();
+            this.Hide();
+            previousForm.Show();
 
         }
     }

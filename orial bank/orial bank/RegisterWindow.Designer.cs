@@ -31,22 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette2 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonNext = new Guna.UI2.WinForms.Guna2Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.inputEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonMaskedTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.kryptonMaskedTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.kryptonMaskedTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.inputCreateCPF = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.inputName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCloseForm = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,19 +62,19 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.guna2Panel1.BorderRadius = 20;
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.buttonNext);
             this.guna2Panel1.Controls.Add(this.label8);
-            this.guna2Panel1.Controls.Add(this.kryptonTextBox3);
+            this.guna2Panel1.Controls.Add(this.inputEmail);
             this.guna2Panel1.Controls.Add(this.kryptonMaskedTextBox3);
             this.guna2Panel1.Controls.Add(this.label7);
             this.guna2Panel1.Controls.Add(this.kryptonMaskedTextBox2);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.kryptonMaskedTextBox1);
-            this.guna2Panel1.Controls.Add(this.kryptonTextBox2);
+            this.guna2Panel1.Controls.Add(this.inputCreateCPF);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.label3);
-            this.guna2Panel1.Controls.Add(this.kryptonTextBox1);
+            this.guna2Panel1.Controls.Add(this.inputName);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.guna2Panel1.Location = new System.Drawing.Point(22, 82);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -84,6 +84,30 @@
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.UseTransparentBackground = true;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // buttonNext
+            // 
+            this.buttonNext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.buttonNext.BorderRadius = 10;
+            this.buttonNext.BorderThickness = 2;
+            this.buttonNext.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.buttonNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonNext.FillColor = System.Drawing.Color.Transparent;
+            this.buttonNext.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.buttonNext.Image = global::orial_bank.Properties.Resources.arrow_right;
+            this.buttonNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonNext.ImageSize = new System.Drawing.Size(13, 20);
+            this.buttonNext.Location = new System.Drawing.Point(303, 495);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.PressedColor = System.Drawing.Color.Empty;
+            this.buttonNext.Size = new System.Drawing.Size(155, 46);
+            this.buttonNext.TabIndex = 13;
+            this.buttonNext.Text = "avançar";
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // label8
             // 
@@ -96,27 +120,30 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "E-mail :";
             // 
-            // kryptonTextBox3
+            // inputEmail
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(31, 416);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Palette = this.kryptonPalette2;
-            this.kryptonTextBox3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonTextBox3.Size = new System.Drawing.Size(427, 42);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.inputEmail.Location = new System.Drawing.Point(31, 416);
+            this.inputEmail.Name = "inputEmail";
+            this.inputEmail.Palette = this.kryptonPalette2;
+            this.inputEmail.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.inputEmail.Size = new System.Drawing.Size(427, 42);
+            this.inputEmail.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.inputEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputEmail.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 10;
-            this.kryptonTextBox3.StateCommon.Border.Width = 2;
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
-            this.kryptonTextBox3.TabIndex = 11;
-            this.kryptonTextBox3.Text = "digite o seu email";
-            this.kryptonTextBox3.UseMnemonic = false;
+            this.inputEmail.StateCommon.Border.Rounding = 10;
+            this.inputEmail.StateCommon.Border.Width = 2;
+            this.inputEmail.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputEmail.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputEmail.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
+            this.inputEmail.TabIndex = 11;
+            this.inputEmail.Text = "digite o seu email";
+            this.inputEmail.UseMnemonic = false;
+            this.inputEmail.TextChanged += new System.EventHandler(this.inputEmail_TextChanged);
+            this.inputEmail.Enter += new System.EventHandler(this.inputEmail_Enter);
+            this.inputEmail.Leave += new System.EventHandler(this.inputEmail_Leave);
             // 
             // kryptonMaskedTextBox3
             // 
@@ -212,26 +239,29 @@
             this.kryptonMaskedTextBox1.TabIndex = 5;
             this.kryptonMaskedTextBox1.Text = "  .   .   .-";
             // 
-            // kryptonTextBox2
+            // inputCreateCPF
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(28, 80);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Palette = this.kryptonPalette2;
-            this.kryptonTextBox2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonTextBox2.Size = new System.Drawing.Size(427, 42);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.inputCreateCPF.Location = new System.Drawing.Point(28, 80);
+            this.inputCreateCPF.Name = "inputCreateCPF";
+            this.inputCreateCPF.Palette = this.kryptonPalette2;
+            this.inputCreateCPF.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.inputCreateCPF.Size = new System.Drawing.Size(427, 42);
+            this.inputCreateCPF.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.inputCreateCPF.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputCreateCPF.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputCreateCPF.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 10;
-            this.kryptonTextBox2.StateCommon.Border.Width = 2;
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
-            this.kryptonTextBox2.TabIndex = 4;
-            this.kryptonTextBox2.Text = "digite o seu CPF ou CNPJ";
+            this.inputCreateCPF.StateCommon.Border.Rounding = 10;
+            this.inputCreateCPF.StateCommon.Border.Width = 2;
+            this.inputCreateCPF.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputCreateCPF.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCreateCPF.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
+            this.inputCreateCPF.TabIndex = 4;
+            this.inputCreateCPF.Text = "digite o seu CPF ou CNPJ";
+            this.inputCreateCPF.TextChanged += new System.EventHandler(this.inputCreateCPF_TextChanged);
+            this.inputCreateCPF.Enter += new System.EventHandler(this.inputCreateCPF_Enter);
+            this.inputCreateCPF.Leave += new System.EventHandler(this.inputCreateCPF_Leave);
             // 
             // label4
             // 
@@ -256,27 +286,29 @@
             this.label3.Text = "Nome :";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // kryptonTextBox1
+            // inputName
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(28, 162);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Palette = this.kryptonPalette2;
-            this.kryptonTextBox1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonTextBox1.Size = new System.Drawing.Size(427, 42);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.inputName.Location = new System.Drawing.Point(28, 162);
+            this.inputName.Name = "inputName";
+            this.inputName.Palette = this.kryptonPalette2;
+            this.inputName.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.inputName.Size = new System.Drawing.Size(427, 42);
+            this.inputName.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.inputName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 10;
-            this.kryptonTextBox1.StateCommon.Border.Width = 2;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
-            this.kryptonTextBox1.TabIndex = 1;
-            this.kryptonTextBox1.Text = "digite o seu nome";
-            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.inputName.StateCommon.Border.Rounding = 10;
+            this.inputName.StateCommon.Border.Width = 2;
+            this.inputName.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputName.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
+            this.inputName.TabIndex = 1;
+            this.inputName.Text = "digite o seu nome";
+            this.inputName.TextChanged += new System.EventHandler(this.inputName_TextChanged);
+            this.inputName.Enter += new System.EventHandler(this.inputName_Enter);
+            this.inputName.Leave += new System.EventHandler(this.inputName_Leave);
             // 
             // label2
             // 
@@ -287,7 +319,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 21);
             this.label2.TabIndex = 0;
-            this.label2.Text = "passo 1 de 3";
+            this.label2.Text = "passo 1 de 2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -303,46 +335,24 @@
             this.label1.Text = "Cadastro";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // guna2Button1
+            // btnCloseForm
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2Button1.Image = global::orial_bank.Properties.Resources.icn_cancel;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(-2, 2);
-            this.guna2Button1.ImageSize = new System.Drawing.Size(22, 22);
-            this.guna2Button1.Location = new System.Drawing.Point(28, 19);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(114, 45);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "cancelar";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.guna2Button2.Image = global::orial_bank.Properties.Resources.arrow_right;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(13, 20);
-            this.guna2Button2.Location = new System.Drawing.Point(303, 495);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button2.Size = new System.Drawing.Size(155, 46);
-            this.guna2Button2.TabIndex = 13;
-            this.guna2Button2.Text = "avançar";
+            this.btnCloseForm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCloseForm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCloseForm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCloseForm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCloseForm.FillColor = System.Drawing.Color.Transparent;
+            this.btnCloseForm.Font = new System.Drawing.Font("Segoe UI Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCloseForm.Image = global::orial_bank.Properties.Resources.icn_cancel;
+            this.btnCloseForm.ImageOffset = new System.Drawing.Point(-2, 2);
+            this.btnCloseForm.ImageSize = new System.Drawing.Size(22, 22);
+            this.btnCloseForm.Location = new System.Drawing.Point(28, 19);
+            this.btnCloseForm.Name = "btnCloseForm";
+            this.btnCloseForm.Size = new System.Drawing.Size(114, 45);
+            this.btnCloseForm.TabIndex = 0;
+            this.btnCloseForm.Text = "cancelar";
+            this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
             // RegisterWindow
             // 
@@ -350,7 +360,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(524, 668);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnCloseForm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label2);
@@ -358,6 +368,7 @@
             this.Name = "RegisterWindow";
             this.Palette = this.kryptonPalette2;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -376,12 +387,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnCloseForm;
         private System.Windows.Forms.Label label2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputCreateCPF;
         private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox kryptonMaskedTextBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox kryptonMaskedTextBox2;
@@ -389,7 +400,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox kryptonMaskedTextBox3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputEmail;
+        private Guna.UI2.WinForms.Guna2Button buttonNext;
     }
 }

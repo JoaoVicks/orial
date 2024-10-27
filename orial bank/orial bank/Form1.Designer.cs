@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.inputPassword = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonMaskedTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+            this.checkBoxSeeOrHidden = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.inputCPF = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.buttonCreateAccount = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,22 +71,24 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 20;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(3);
             // 
-            // kryptonTextBox1
+            // inputPassword
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(82, 224);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(293, 41);
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.inputPassword.Location = new System.Drawing.Point(82, 224);
+            this.inputPassword.Name = "inputPassword";
+            this.inputPassword.Size = new System.Drawing.Size(293, 41);
+            this.inputPassword.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 12;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 10.25F);
-            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 6, 5, 6);
-            this.kryptonTextBox1.TabIndex = 0;
-            this.kryptonTextBox1.Text = "digite sua senha";
-            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.inputPassword.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.inputPassword.StateCommon.Border.Rounding = 12;
+            this.inputPassword.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
+            this.inputPassword.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 10.25F);
+            this.inputPassword.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 6, 5, 6);
+            this.inputPassword.TabIndex = 0;
+            this.inputPassword.Text = "digite sua senha";
+            this.inputPassword.TextChanged += new System.EventHandler(this.inputPassword_TextChanged);
+            this.inputPassword.Enter += new System.EventHandler(this.inputPassword_Enter);
+            this.inputPassword.Leave += new System.EventHandler(this.inputPassword_Leave);
             // 
             // kryptonButton1
             // 
@@ -158,69 +160,72 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "O melhor banco para o seu bolso";
             // 
-            // kryptonCheckButton1
+            // checkBoxSeeOrHidden
             // 
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(32, 224);
-            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.OverrideDefault.Back.Image = global::orial_bank.Properties.Resources.close_eye;
-            this.kryptonCheckButton1.OverrideDefault.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.OverrideDefault.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.Location = new System.Drawing.Point(32, 224);
+            this.checkBoxSeeOrHidden.Name = "checkBoxSeeOrHidden";
+            this.checkBoxSeeOrHidden.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.OverrideDefault.Back.Image = global::orial_bank.Properties.Resources.close_eye;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.OverrideDefault.Border.Rounding = 5;
-            this.kryptonCheckButton1.OverrideDefault.Border.Width = 2;
-            this.kryptonCheckButton1.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Rounding = 5;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Width = 2;
+            this.checkBoxSeeOrHidden.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.Palette = this.kryptonPalette1;
-            this.kryptonCheckButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(44, 41);
-            this.kryptonCheckButton1.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedNormal.Back.Image = global::orial_bank.Properties.Resources.open_eye;
-            this.kryptonCheckButton1.StateCheckedNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.Palette = this.kryptonPalette1;
+            this.checkBoxSeeOrHidden.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.checkBoxSeeOrHidden.Size = new System.Drawing.Size(44, 41);
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.Image = global::orial_bank.Properties.Resources.open_eye;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Rounding = 5;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Width = 2;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.Image = global::orial_bank.Properties.Resources.open_eye;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonCheckButton1.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateNormal.Back.Image = global::orial_bank.Properties.Resources.close_eye;
-            this.kryptonCheckButton1.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonCheckButton1.StateNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Rounding = 5;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Width = 2;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.Image = global::orial_bank.Properties.Resources.open_eye;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.checkBoxSeeOrHidden.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateNormal.Back.Image = global::orial_bank.Properties.Resources.close_eye;
+            this.checkBoxSeeOrHidden.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.checkBoxSeeOrHidden.StateNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.StateNormal.Border.Rounding = 12;
-            this.kryptonCheckButton1.StateNormal.Border.Width = 2;
-            this.kryptonCheckButton1.TabIndex = 6;
-            this.kryptonCheckButton1.Values.Text = "";
+            this.checkBoxSeeOrHidden.StateNormal.Border.Rounding = 12;
+            this.checkBoxSeeOrHidden.StateNormal.Border.Width = 2;
+            this.checkBoxSeeOrHidden.TabIndex = 6;
+            this.checkBoxSeeOrHidden.Values.Text = "";
+            this.checkBoxSeeOrHidden.CheckedChanged += new System.EventHandler(this.checkBoxSeeOrHidden_CheckedChanged);
+            this.checkBoxSeeOrHidden.Click += new System.EventHandler(this.checkBoxSeeOrHidden_Click);
             // 
-            // kryptonMaskedTextBox1
+            // inputCPF
             // 
-            this.kryptonMaskedTextBox1.Location = new System.Drawing.Point(32, 158);
-            this.kryptonMaskedTextBox1.Mask = "999 , 999 , 999 --99";
-            this.kryptonMaskedTextBox1.Name = "kryptonMaskedTextBox1";
-            this.kryptonMaskedTextBox1.Size = new System.Drawing.Size(343, 42);
-            this.kryptonMaskedTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.inputCPF.Location = new System.Drawing.Point(32, 158);
+            this.inputCPF.Mask = "999 , 999 , 999 --99";
+            this.inputCPF.Name = "inputCPF";
+            this.inputCPF.Size = new System.Drawing.Size(343, 42);
+            this.inputCPF.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonMaskedTextBox1.StateCommon.Border.Rounding = 12;
-            this.kryptonMaskedTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 10.75F);
-            this.kryptonMaskedTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 6, 5, 6);
-            this.kryptonMaskedTextBox1.TabIndex = 8;
-            this.kryptonMaskedTextBox1.Text = "    .     .     --";
+            this.inputCPF.StateCommon.Border.Rounding = 12;
+            this.inputCPF.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 10.75F);
+            this.inputCPF.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 6, 5, 6);
+            this.inputCPF.TabIndex = 8;
+            this.inputCPF.Text = "    .     .     --";
+            this.inputCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.inputCPF_MaskInputRejected);
             // 
             // kryptonPanel1
             // 
@@ -233,28 +238,29 @@
             this.kryptonPanel1.StateCommon.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
             this.kryptonPanel1.TabIndex = 9;
             // 
-            // kryptonButton2
+            // buttonCreateAccount
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(32, 387);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Palette = this.kryptonPalette1;
-            this.kryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonButton2.Size = new System.Drawing.Size(343, 48);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.buttonCreateAccount.Location = new System.Drawing.Point(32, 387);
+            this.buttonCreateAccount.Name = "buttonCreateAccount";
+            this.buttonCreateAccount.Palette = this.kryptonPalette1;
+            this.buttonCreateAccount.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.buttonCreateAccount.Size = new System.Drawing.Size(343, 48);
+            this.buttonCreateAccount.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.buttonCreateAccount.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
+            this.buttonCreateAccount.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonCreateAccount.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonCreateAccount.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 12;
-            this.kryptonButton2.StateCommon.Border.Width = 3;
-            this.kryptonButton2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 5, -1, 5);
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 10;
-            this.kryptonButton2.Values.Text = "entrar na conta";
+            this.buttonCreateAccount.StateCommon.Border.Rounding = 12;
+            this.buttonCreateAccount.StateCommon.Border.Width = 3;
+            this.buttonCreateAccount.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 5, -1, 5);
+            this.buttonCreateAccount.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonCreateAccount.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonCreateAccount.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateAccount.TabIndex = 10;
+            this.buttonCreateAccount.Values.Text = "criar conta";
+            this.buttonCreateAccount.Click += new System.EventHandler(this.buttonCreateAccount_Click);
             // 
             // Form1
             // 
@@ -263,22 +269,23 @@
             this.BackgroundImage = global::orial_bank.Properties.Resources.Design_sem_nome;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(883, 533);
-            this.Controls.Add(this.kryptonButton2);
+            this.Controls.Add(this.buttonCreateAccount);
             this.Controls.Add(this.kryptonPanel1);
-            this.Controls.Add(this.kryptonMaskedTextBox1);
-            this.Controls.Add(this.kryptonCheckButton1);
+            this.Controls.Add(this.inputCPF);
+            this.Controls.Add(this.checkBoxSeeOrHidden);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonButton1);
-            this.Controls.Add(this.kryptonTextBox1);
+            this.Controls.Add(this.inputPassword);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
@@ -290,16 +297,16 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputPassword;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox kryptonMaskedTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton checkBoxSeeOrHidden;
+        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox inputCPF;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton buttonCreateAccount;
     }
 }
 

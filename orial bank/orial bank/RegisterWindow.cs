@@ -47,9 +47,90 @@ namespace orial_bank
 
         }
 
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        private void inputName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void inputCreateCPF_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputCreateCPF_Enter(object sender, EventArgs e)
+        {
+            if (inputCreateCPF.Text == "digite o seu CPF ou CNPJ" )
+            {
+                inputCreateCPF.Text = "";
+                inputCreateCPF.ForeColor = Color.White;
+            }
+        }
+
+        private void inputCreateCPF_Leave(object sender, EventArgs e)
+        {
+            if (inputCreateCPF.Text == "")
+            {
+                inputCreateCPF.Text = "digite o seu CPF ou CNPJ";
+                inputCreateCPF.ForeColor = Color.White;
+            }
+        }
+
+        private void btnCloseForm_Click(object sender, EventArgs e)
+        {
+            Form1 firstForm = new Form1();
+
+            this.Close();
+
+            firstForm.Show();
+        }
+
+        private void inputName_Enter(object sender, EventArgs e)
+        {
+            if (inputName.Text == "digite o seu nome")
+            {
+                inputName.Text = "";
+                inputName.ForeColor = Color.White;
+            }
+        }
+
+        private void inputName_Leave(object sender, EventArgs e)
+        {
+            if (inputName.Text == "")
+            {
+                inputName.Text = "digite o seu nome";
+                inputName.ForeColor = Color.White;
+            }
+        }
+
+        private void inputEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputEmail_Enter(object sender, EventArgs e)
+        {
+            if (inputEmail.Text == "digite o seu email")
+            {
+                inputEmail.Text = "";
+                inputEmail.ForeColor = Color.White;
+            }
+        }
+
+        private void inputEmail_Leave(object sender, EventArgs e)
+        {
+            if (inputEmail.Text == "")
+            {
+                inputEmail.Text = "digite o seu email";
+                inputEmail.ForeColor = Color.White;
+            }
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+
+            RegisterWindowStep_2 NextForm = new RegisterWindowStep_2();
+            this.Hide();
+             NextForm.Show();
         }
     }
 }

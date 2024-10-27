@@ -25,3 +25,32 @@ C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\
 C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial bank.pdb
 C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\bin\Debug\Guna.UI2.dll
 C:\Users\USER\OneDrive\Área de Trabalho\orial-master\orial bank\orial bank\obj\Debug\orial_bank.RegisterWindow.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\orial bank.exe.config
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\orial bank.exe
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\orial bank.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\Guna.Charts.WinForms.dll
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\Guna.UI2.dll
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.dll
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\Guna.Charts.WinForms.xml
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.xml
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.Form1.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.Home.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.Properties.Resources.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.RegisterWindow_step_3.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.RegisterWindow.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.RegisterWindowStep_2.resources
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.csproj.GenerateResource.cache
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.csproj.Up2Date
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.exe
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.pdb
