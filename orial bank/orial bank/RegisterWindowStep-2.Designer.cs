@@ -38,7 +38,7 @@
             this.inputConfirmPassWord = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.inputPassWord = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonNext = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
@@ -74,7 +74,7 @@
             this.guna2Panel1.Controls.Add(this.inputConfirmPassWord);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.inputPassWord);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.buttonNext);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.guna2Panel1.Location = new System.Drawing.Point(23, 84);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -194,29 +194,29 @@
             this.inputPassWord.Enter += new System.EventHandler(this.inputPassWord_Enter);
             this.inputPassWord.Leave += new System.EventHandler(this.inputPassWord_Leave);
             // 
-            // guna2Button2
+            // buttonNext
             // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::orial_bank.Properties.Resources.arrow_right_white;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(13, 20);
-            this.guna2Button2.Location = new System.Drawing.Point(249, 246);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.Empty;
-            this.guna2Button2.Size = new System.Drawing.Size(205, 46);
-            this.guna2Button2.TabIndex = 13;
-            this.guna2Button2.Text = "avançar";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.buttonNext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonNext.BorderRadius = 10;
+            this.buttonNext.BorderThickness = 2;
+            this.buttonNext.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.buttonNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonNext.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext.ForeColor = System.Drawing.Color.White;
+            this.buttonNext.Image = global::orial_bank.Properties.Resources.arrow_right_white;
+            this.buttonNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonNext.ImageSize = new System.Drawing.Size(13, 20);
+            this.buttonNext.Location = new System.Drawing.Point(249, 246);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.PressedColor = System.Drawing.Color.Empty;
+            this.buttonNext.Size = new System.Drawing.Size(205, 46);
+            this.buttonNext.TabIndex = 13;
+            this.buttonNext.Text = "avançar";
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // label2
             // 
@@ -278,7 +278,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button buttonNext;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputPassWord;
         private System.Windows.Forms.Label label3;

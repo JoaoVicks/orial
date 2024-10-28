@@ -54,3 +54,4 @@ C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\o
 C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.csproj.Up2Date
 C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.exe
 C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial bank.pdb
+C:\Users\USER\OneDrive\Área de Trabalho\teste\orial bank\orial bank\obj\Debug\orial_bank.PixForm.resources

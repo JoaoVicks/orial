@@ -47,5 +47,11 @@ namespace orial_bank
         {
 
         }
+
+        private void ButtonPIX_Click(object sender, EventArgs e)
+        {
+            PixForm formPix = new PixForm();
+            formPix.Show();
+        }
     }
 }

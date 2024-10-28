@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.kryptonPalette2 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label8 = new System.Windows.Forms.Label();
             this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,11 +48,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.nameWork = new System.Windows.Forms.Label();
+            this.userName = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.userName = new System.Windows.Forms.Label();
-            this.nameWork = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.buttonUser = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonPIX = new Guna.UI2.WinForms.Guna2Button();
@@ -82,6 +82,10 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonPalette2.FormStyles.FormMain.StateCommon.Border.Rounding = 15;
+            this.kryptonPalette2.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonPalette2.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
+            this.kryptonPalette2.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 30;
+            this.kryptonPalette2.HeaderStyles.HeaderForm.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(5);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -101,6 +105,18 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(656, 152);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(62, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 21);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Total :";
             // 
             // kryptonCheckButton1
             // 
@@ -186,13 +202,13 @@
             // 
             this.kryptonDataGridView1.AllowUserToDeleteRows = false;
             this.kryptonDataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Format = "g";
-            dataGridViewCellStyle3.NullValue = "0";
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.kryptonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Format = "g";
+            dataGridViewCellStyle1.NullValue = "0";
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.kryptonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
@@ -366,6 +382,30 @@
             this.guna2Panel1.TabIndex = 6;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // nameWork
+            // 
+            this.nameWork.AutoSize = true;
+            this.nameWork.BackColor = System.Drawing.Color.Transparent;
+            this.nameWork.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameWork.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.nameWork.Location = new System.Drawing.Point(82, 41);
+            this.nameWork.Name = "nameWork";
+            this.nameWork.Size = new System.Drawing.Size(70, 13);
+            this.nameWork.TabIndex = 2;
+            this.nameWork.Text = "programador";
+            // 
+            // userName
+            // 
+            this.userName.AutoSize = true;
+            this.userName.BackColor = System.Drawing.Color.Transparent;
+            this.userName.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.userName.Location = new System.Drawing.Point(82, 19);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(82, 20);
+            this.userName.TabIndex = 1;
+            this.userName.Text = "João Pedro";
+            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BorderRadius = 5;
@@ -389,42 +429,6 @@
             this.label7.Size = new System.Drawing.Size(75, 59);
             this.label7.TabIndex = 0;
             this.label7.Text = "JP";
-            // 
-            // userName
-            // 
-            this.userName.AutoSize = true;
-            this.userName.BackColor = System.Drawing.Color.Transparent;
-            this.userName.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.userName.Location = new System.Drawing.Point(82, 19);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(82, 20);
-            this.userName.TabIndex = 1;
-            this.userName.Text = "João Pedro";
-            // 
-            // nameWork
-            // 
-            this.nameWork.AutoSize = true;
-            this.nameWork.BackColor = System.Drawing.Color.Transparent;
-            this.nameWork.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameWork.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.nameWork.Location = new System.Drawing.Point(82, 41);
-            this.nameWork.Name = "nameWork";
-            this.nameWork.Size = new System.Drawing.Size(70, 13);
-            this.nameWork.TabIndex = 2;
-            this.nameWork.Text = "programador";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(62, 22);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 21);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Total :";
             // 
             // guna2Panel2
             // 
@@ -479,6 +483,7 @@
             this.ButtonPIX.Name = "ButtonPIX";
             this.ButtonPIX.Size = new System.Drawing.Size(54, 45);
             this.ButtonPIX.TabIndex = 0;
+            this.ButtonPIX.Click += new System.EventHandler(this.ButtonPIX_Click);
             // 
             // pictureBox2
             // 

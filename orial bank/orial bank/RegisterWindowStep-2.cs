@@ -43,9 +43,11 @@ namespace orial_bank
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void buttonNext_Click(object sender, EventArgs e)
         {
-
+            Home formPrincipal = new Home();
+            this.Hide();
+            formPrincipal.Show();
         }
 
         private void label5_Click(object sender, EventArgs e)
