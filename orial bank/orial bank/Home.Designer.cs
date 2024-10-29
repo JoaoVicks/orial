@@ -33,8 +33,8 @@
             this.kryptonPalette2 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.checkBoxSeeOrHidden = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.accountValue = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
@@ -43,10 +43,13 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.nameWork = new System.Windows.Forms.Label();
             this.userName = new System.Windows.Forms.Label();
@@ -55,21 +58,18 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.buttonUser = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonPIX = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.guna2CustomGradientPanel3.SuspendLayout();
             this.guna2CustomGradientPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette2
@@ -93,8 +93,8 @@
             this.guna2CustomGradientPanel1.BorderRadius = 20;
             this.guna2CustomGradientPanel1.BorderThickness = 3;
             this.guna2CustomGradientPanel1.Controls.Add(this.label8);
-            this.guna2CustomGradientPanel1.Controls.Add(this.kryptonCheckButton1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.label3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.checkBoxSeeOrHidden);
+            this.guna2CustomGradientPanel1.Controls.Add(this.accountValue);
             this.guna2CustomGradientPanel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(63)))));
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
@@ -118,63 +118,66 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "Total :";
             // 
-            // kryptonCheckButton1
+            // checkBoxSeeOrHidden
             // 
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(565, 60);
-            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.OverrideDefault.Back.Image = global::orial_bank.Properties.Resources.close_eye;
-            this.kryptonCheckButton1.OverrideDefault.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.OverrideDefault.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.Location = new System.Drawing.Point(565, 60);
+            this.checkBoxSeeOrHidden.Name = "checkBoxSeeOrHidden";
+            this.checkBoxSeeOrHidden.OverrideDefault.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.OverrideDefault.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.OverrideDefault.Back.Image = global::orial_bank.Properties.Resources.close_eye;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.OverrideDefault.Border.Rounding = 5;
-            this.kryptonCheckButton1.OverrideDefault.Border.Width = 2;
-            this.kryptonCheckButton1.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Rounding = 5;
+            this.checkBoxSeeOrHidden.OverrideDefault.Border.Width = 2;
+            this.checkBoxSeeOrHidden.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(44, 44);
-            this.kryptonCheckButton1.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedNormal.Back.Image = global::orial_bank.Properties.Resources.open_eye;
-            this.kryptonCheckButton1.StateCheckedNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.Size = new System.Drawing.Size(44, 44);
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.Image = global::orial_bank.Properties.Resources.open_eye;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Rounding = 5;
-            this.kryptonCheckButton1.StateCheckedNormal.Border.Width = 2;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.Image = global::orial_bank.Properties.Resources.open_eye;
-            this.kryptonCheckButton1.StateCheckedPressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonCheckButton1.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonCheckButton1.StateNormal.Back.Image = global::orial_bank.Properties.Resources.close_eye;
-            this.kryptonCheckButton1.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonCheckButton1.StateNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
-            this.kryptonCheckButton1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Rounding = 5;
+            this.checkBoxSeeOrHidden.StateCheckedNormal.Border.Width = 2;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.Image = global::orial_bank.Properties.Resources.open_eye;
+            this.checkBoxSeeOrHidden.StateCheckedPressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.checkBoxSeeOrHidden.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.checkBoxSeeOrHidden.StateNormal.Back.Image = global::orial_bank.Properties.Resources.close_eye;
+            this.checkBoxSeeOrHidden.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.checkBoxSeeOrHidden.StateNormal.Border.Color1 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateNormal.Border.Color2 = System.Drawing.Color.MediumSpringGreen;
+            this.checkBoxSeeOrHidden.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonCheckButton1.StateNormal.Border.Rounding = 12;
-            this.kryptonCheckButton1.StateNormal.Border.Width = 2;
-            this.kryptonCheckButton1.TabIndex = 7;
-            this.kryptonCheckButton1.Values.Text = "";
+            this.checkBoxSeeOrHidden.StateNormal.Border.Rounding = 12;
+            this.checkBoxSeeOrHidden.StateNormal.Border.Width = 2;
+            this.checkBoxSeeOrHidden.TabIndex = 7;
+            this.checkBoxSeeOrHidden.Values.Text = "";
+            this.checkBoxSeeOrHidden.CheckedChanged += new System.EventHandler(this.checkBoxSeeOrHidden_CheckedChanged);
+            this.checkBoxSeeOrHidden.Click += new System.EventHandler(this.checkBoxSeeOrHidden_Click);
             // 
-            // label3
+            // accountValue
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 45F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
-            this.label3.Location = new System.Drawing.Point(38, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(285, 81);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "17.589,00";
+            this.accountValue.AutoSize = true;
+            this.accountValue.Font = new System.Drawing.Font("Segoe UI", 45F);
+            this.accountValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.accountValue.Location = new System.Drawing.Point(38, 38);
+            this.accountValue.Name = "accountValue";
+            this.accountValue.Size = new System.Drawing.Size(285, 81);
+            this.accountValue.TabIndex = 0;
+            this.accountValue.Text = "17.589,00";
+            this.accountValue.Click += new System.EventHandler(this.accountValue_Click);
             // 
             // label1
             // 
@@ -319,6 +322,25 @@
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(416, 247);
             this.guna2CustomGradientPanel4.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::orial_bank.Properties.Resources.icn_aproximação;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(348, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 30);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::orial_bank.Properties.Resources.CHIP_png;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 30);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // guna2CustomGradientPanel5
             // 
             this.guna2CustomGradientPanel5.BorderRadius = 20;
@@ -368,6 +390,16 @@
             this.label4.Size = new System.Drawing.Size(253, 35);
             this.label4.TabIndex = 4;
             this.label4.Text = " 1234 **** **** 69789";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::orial_bank.Properties.Resources.icn_bandeira;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(339, 76);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(58, 35);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // guna2Panel1
             // 
@@ -485,35 +517,6 @@
             this.ButtonPIX.TabIndex = 0;
             this.ButtonPIX.Click += new System.EventHandler(this.ButtonPIX_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::orial_bank.Properties.Resources.icn_aproximação;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(348, 33);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 30);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::orial_bank.Properties.Resources.CHIP_png;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 30);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::orial_bank.Properties.Resources.icn_bandeira;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(339, 76);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 35);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,16 +542,16 @@
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2CustomGradientPanel5.ResumeLayout(false);
             this.guna2CustomGradientPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,8 +563,8 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton1;
+        private System.Windows.Forms.Label accountValue;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton checkBoxSeeOrHidden;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewDateTimePickerColumn dataHorário;

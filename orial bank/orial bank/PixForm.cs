@@ -73,5 +73,10 @@ namespace orial_bank
         {
 
         }
+
+        private void inputValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

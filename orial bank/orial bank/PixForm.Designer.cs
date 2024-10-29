@@ -32,11 +32,14 @@
             this.kryptonPalette2 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PixType = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.btnCloseForm = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.inputKey = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PixType = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnCloseForm = new Guna.UI2.WinForms.Guna2Button();
+            this.inputValue = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonNext = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PixType)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +75,9 @@
             // 
             this.guna2CustomGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2CustomGradientPanel1.BorderRadius = 20;
+            this.guna2CustomGradientPanel1.Controls.Add(this.buttonNext);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.inputValue);
             this.guna2CustomGradientPanel1.Controls.Add(this.inputKey);
             this.guna2CustomGradientPanel1.Controls.Add(this.label2);
             this.guna2CustomGradientPanel1.Controls.Add(this.PixType);
@@ -80,10 +86,94 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(30, 82);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(28, 84);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(682, 237);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(682, 274);
             this.guna2CustomGradientPanel1.TabIndex = 1;
+            // 
+            // inputKey
+            // 
+            this.inputKey.Location = new System.Drawing.Point(312, 41);
+            this.inputKey.Name = "inputKey";
+            this.inputKey.Palette = this.kryptonPalette2;
+            this.inputKey.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.inputKey.Size = new System.Drawing.Size(340, 42);
+            this.inputKey.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.inputKey.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputKey.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputKey.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.inputKey.StateCommon.Border.Rounding = 10;
+            this.inputKey.StateCommon.Border.Width = 2;
+            this.inputKey.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputKey.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputKey.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
+            this.inputKey.TabIndex = 9;
+            this.inputKey.Text = "digite o seu CPF ou CNPJ";
+            this.inputKey.TextChanged += new System.EventHandler(this.inputKey_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(307, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Chave :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // PixType
+            // 
+            this.PixType.DropDownHeight = 220;
+            this.PixType.DropDownWidth = 227;
+            this.PixType.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Ribbon;
+            this.PixType.Items.AddRange(new object[] {
+            "chave aleatória",
+            "CPF",
+            "email",
+            "telefone"});
+            this.PixType.Location = new System.Drawing.Point(43, 46);
+            this.PixType.Name = "PixType";
+            this.PixType.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.PixType.Size = new System.Drawing.Size(233, 33);
+            this.PixType.Sorted = true;
+            this.PixType.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PixType.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.White;
+            this.PixType.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.White;
+            this.PixType.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PixType.StateCommon.ComboBox.Border.Rounding = 10;
+            this.PixType.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.White;
+            this.PixType.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PixType.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(4);
+            this.PixType.StateCommon.DropBack.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PixType.StateCommon.DropBack.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PixType.StateCommon.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PixType.StateCommon.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PixType.StateCommon.Item.Border.Color1 = System.Drawing.Color.White;
+            this.PixType.StateCommon.Item.Border.Color2 = System.Drawing.Color.White;
+            this.PixType.StateCommon.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PixType.StateCommon.Item.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.PixType.StateCommon.Item.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.PixType.StateCommon.Item.Content.LongText.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PixType.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.PixType.StateCommon.Item.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.PixType.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PixType.StateNormal.Item.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.PixType.StateNormal.Item.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.PixType.StateNormal.Item.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.PixType.StateNormal.Item.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.PixType.TabIndex = 7;
+            this.PixType.Text = "tipo da chave pix";
+            this.PixType.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox1_SelectedIndexChanged);
+            this.PixType.SelectedValueChanged += new System.EventHandler(this.PixType_SelectedValueChanged);
             // 
             // label4
             // 
@@ -97,46 +187,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Tipo :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // PixType
-            // 
-            this.PixType.DropDownWidth = 227;
-            this.PixType.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Ribbon;
-            this.PixType.Items.AddRange(new object[] {
-            "chave aleatória",
-            "email",
-            "telefone"});
-            this.PixType.Location = new System.Drawing.Point(43, 46);
-            this.PixType.Name = "PixType";
-            this.PixType.Size = new System.Drawing.Size(233, 33);
-            this.PixType.Sorted = true;
-            this.PixType.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PixType.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.White;
-            this.PixType.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.PixType.StateCommon.ComboBox.Border.Rounding = 10;
-            this.PixType.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.White;
-            this.PixType.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PixType.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(2);
-            this.PixType.StateCommon.DropBack.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PixType.StateCommon.DropBack.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PixType.StateCommon.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PixType.StateCommon.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.PixType.StateCommon.Item.Border.Color1 = System.Drawing.Color.White;
-            this.PixType.StateCommon.Item.Border.Color2 = System.Drawing.Color.White;
-            this.PixType.StateCommon.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.PixType.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.PixType.StateCommon.Item.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.PixType.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PixType.StateNormal.Item.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.PixType.StateNormal.Item.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.PixType.TabIndex = 7;
-            this.PixType.Text = "CPF";
-            this.PixType.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox1_SelectedIndexChanged);
-            this.PixType.SelectedValueChanged += new System.EventHandler(this.PixType_SelectedValueChanged);
             // 
             // btnCloseForm
             // 
@@ -157,47 +207,70 @@
             this.btnCloseForm.Text = "cancelar";
             this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
-            // label2
+            // inputValue
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(311, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Chave :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // inputKey
-            // 
-            this.inputKey.Location = new System.Drawing.Point(315, 41);
-            this.inputKey.Name = "inputKey";
-            this.inputKey.Palette = this.kryptonPalette2;
-            this.inputKey.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.inputKey.Size = new System.Drawing.Size(353, 42);
-            this.inputKey.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.inputKey.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.inputKey.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.inputKey.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.inputValue.Location = new System.Drawing.Point(43, 137);
+            this.inputValue.Name = "inputValue";
+            this.inputValue.Palette = this.kryptonPalette2;
+            this.inputValue.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.inputValue.Size = new System.Drawing.Size(612, 42);
+            this.inputValue.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.inputValue.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputValue.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputValue.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.inputKey.StateCommon.Border.Rounding = 10;
-            this.inputKey.StateCommon.Border.Width = 2;
-            this.inputKey.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.inputKey.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputKey.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
-            this.inputKey.TabIndex = 9;
-            this.inputKey.Text = "digite o seu CPF ou CNPJ";
-            this.inputKey.TextChanged += new System.EventHandler(this.inputKey_TextChanged);
+            this.inputValue.StateCommon.Border.Rounding = 10;
+            this.inputValue.StateCommon.Border.Width = 2;
+            this.inputValue.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.inputValue.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputValue.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 7, 5, 7);
+            this.inputValue.TabIndex = 10;
+            this.inputValue.Text = "R$ :";
+            this.inputValue.TextChanged += new System.EventHandler(this.inputValue_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(39, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(216, 20);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Digite o valor para ser enviado :";
+            // 
+            // buttonNext
+            // 
+            this.buttonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonNext.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonNext.BorderRadius = 10;
+            this.buttonNext.BorderThickness = 2;
+            this.buttonNext.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))));
+            this.buttonNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(204)))), ((int)(((byte)(79)))));
+            this.buttonNext.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext.ForeColor = System.Drawing.Color.White;
+            this.buttonNext.Image = global::orial_bank.Properties.Resources.arrow_right_white;
+            this.buttonNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonNext.ImageSize = new System.Drawing.Size(13, 20);
+            this.buttonNext.Location = new System.Drawing.Point(219, 204);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.PressedColor = System.Drawing.Color.Empty;
+            this.buttonNext.Size = new System.Drawing.Size(205, 46);
+            this.buttonNext.TabIndex = 14;
+            this.buttonNext.Text = "efetuar pix";
             // 
             // PixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(735, 363);
+            this.ClientSize = new System.Drawing.Size(735, 394);
             this.Controls.Add(this.btnCloseForm);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.label1);
@@ -227,5 +300,8 @@
         private Guna.UI2.WinForms.Guna2Button btnCloseForm;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputKey;
+        private System.Windows.Forms.Label label3;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox inputValue;
+        private Guna.UI2.WinForms.Guna2Button buttonNext;
     }
 }

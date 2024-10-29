@@ -53,5 +53,40 @@ namespace orial_bank
             PixForm formPix = new PixForm();
             formPix.Show();
         }
+
+        private void checkBoxSeeOrHidden_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accountValue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private string originalAccountValue;
+
+        private void checkBoxSeeOrHidden_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            if (originalAccountValue == null)
+            {
+                originalAccountValue = accountValue.Text;
+            }
+
+           
+            if (checkBoxSeeOrHidden.Checked)
+            {
+                
+                accountValue.Text = new string('*', originalAccountValue.Length);
+            }
+            else
+            {
+               
+                accountValue.Text = originalAccountValue;
+            }
+        }
+
     }
 }

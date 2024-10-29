@@ -69,8 +69,6 @@ namespace orial_bank
                 inputPassword.PasswordChar = '*';
                 inputPassword.StateCommon.Content.Color1 = Color.Black;
                 
-
-
             }
             else { 
             inputPassword.PasswordChar = '\0';
